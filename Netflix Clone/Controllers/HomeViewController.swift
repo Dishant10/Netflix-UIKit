@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         
         homeFeedTable.dataSource = self
         homeFeedTable.delegate = self
-        
+        homeFeedTable.tableHeaderView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
     }
     
     override func viewDidLayoutSubviews() {
